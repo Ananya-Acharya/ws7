@@ -1,0 +1,13 @@
+ 1001  grep -P '\t0446608653\t' amazon_reviews_us_Books_v1_02.tsv > amzn_temp.tsv
+ 1002  cut -f 14 amzn_temp.tsv > amzn_review_body.txt
+ 1003  wc -l amzn_review_body.txt 
+ 1004  sed 's/,//g' amzn_review_body.txt > a7_1.txt
+ 1005  sed 's/;//g' a7_1.txt > a7_2.txt
+ 1006  sed 's/\.//g' a7_2.txt > a7_3.txt
+ 1007  sed 's/ and//g' a7_3.txt > a7_4.txt
+ 1008  sed 's/ or//g' a7_4.txt > a7_5.txt
+ 1009  sed 's/ if//g' a7_5.txt > a7_6.txt
+ 1010  sed 's/<br \/>//g' a7_6.txt > a7_7.txt
+ 1011  sed 's/<BR>//g' a7_7.txt > a7_8.txt
+ 1012  sed 's/<BR>//g' a7_7.txt > amzn_review.txt
+ 1013  history > cmds.log

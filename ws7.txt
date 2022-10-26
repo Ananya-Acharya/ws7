@@ -1,0 +1,18 @@
+Script started on 2022-10-26 01:20:55-04:00
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ grep -P '\t0446608653\t' amazon_reviews_us_Books_v1_02.tsv >  amzn_temp.tsv
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ cut -f 14 amzn_temp.tsv > amzn_review_body.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ sed 's[K[K[K[K[K[Kwc -l amzn_review_body.txt 
+35 amzn_review_body.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ cut -f 1[K[K[K[K[K[K[K[Ksed 's/.[K,//g' amzn_review_body.txt > a7_1.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ sed 's/;//g' a7_1.ts[Kxt > a7_2.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ sed 's/\.//g' a7_2.txt > a7_3.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ ss[Ked 's/ and//g' a7_3.txt > a7_4.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ sed 's/ or//g' a7_4.txt > a7_5.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ sed 's/ if//g' a7_5.txt > a7_6.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ sed 's/<br \/>//g' a7_6.txt > a7_7.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ sed 's/<BR [K/\[K[K\/[K[K>//g' a7_7.txt > a7_8.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ sed 's/<BR>//g' a7_7.txt > a7_8.txt[K[K[K[K[K[K[Kmzn_review.txt
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ history > cmds.log
+kananya@sjsu:/mnt/scratch/ananya/ws7\[ananya@sjsu ws7]$ exit
+
+Script done on 2022-10-26 01:40:30-04:00
